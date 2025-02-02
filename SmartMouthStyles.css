@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Nova Mono', serif;
+}
+body{
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+    margin: 10px;
+    padding: 0;
+    background-color: red;
+}
+
+div.container{
+    display: grid;
+    position: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    background-color: greenyellow;  
+    
+}
+
+#letters{
+    display: block;
+    width: 100%;
+    background-color: brown;
+}
+
+#letter1, #letter2{
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    background-color: blue;
+}
+
+#button{
+    display: grid;
+    flex-grow: 1;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 100%;
+}
+
+button{
+    color: white;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+}
