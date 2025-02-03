@@ -1,52 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 *{
     box-sizing: border-box;
-    font-family: 'Nova Mono', serif;
+    font-family: 'Urbanist', serif;
 }
-body{
-    display: grid;
-    flex-direction: column;
-    height: 100%;
-    margin: 10px;
-    padding: 0;
-    background-color: red;
+html, body{
+    display: flex;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6700;
+    color: #EBEBEB;
 }
 
 div.container{
-    display: grid;
-    position: center;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
+    
+    overflow: hidden;
+    margin-top: 90px;
     border-radius: 10px;
     border-color: black;
     border-width: 2px;
-    background-color: greenyellow;  
+    background-color: #3a6ea5;  
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 1) 0 7px 103px -30px;
     
 }
 
 #letters{
-    display: block;
-    width: 100%;
-    background-color: brown;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 250px;
+    
 }
 
 #letter1, #letter2{
     display: block;
     float: left;
-    width: 50%;
-    padding: 20px;
-    background-color: blue;
+    text-align: center;
+    width: 45%;
+    border-style: solid;
+    border-width: 2px;
+    margin: 10px;
+    font-size: 80px;
+    
+}
+/* CSS */
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }
 
 #button{
     display: grid;
     flex-grow: 1;
     justify-content: center;
-    background-color: aquamarine;
     width: 100%;
+    height: 250px;
+    margin: auto;
+    padding: 0;
 }
 
 button{
@@ -54,4 +110,5 @@ button{
     background-color: gray;
     padding: 10px;
     border-radius: 5px;
+    margin: auto;
 }
